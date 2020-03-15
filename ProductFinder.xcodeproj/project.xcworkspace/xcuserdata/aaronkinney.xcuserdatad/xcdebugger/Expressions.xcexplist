@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TableCell.productPrice.didset:TableCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableCell.productPicture.didset:TableCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "productPicture">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
