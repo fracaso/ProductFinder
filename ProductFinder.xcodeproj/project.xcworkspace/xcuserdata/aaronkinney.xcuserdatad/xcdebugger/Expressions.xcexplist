@@ -3,13 +3,48 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.prepare(for:sender:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "productMaster">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TableCell.productPrice.didset:TableCell.swift">
       </ContextState>
       <ContextState
          contextName = "TableCell.productPicture.didset:TableCell.swift">
          <PersistentStrings>
             <PersistentString
+               value = "productImage.image">
+            </PersistentString>
+            <PersistentString
                value = "productPicture">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableCell.productItem.didset:TableCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "productItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "productMaster">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableCell.setSelected(_:animated:):TableCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "productItem">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

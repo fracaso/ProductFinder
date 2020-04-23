@@ -11,11 +11,15 @@
 		002BC0AE241DDAFC00D87780 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC0AD241DDAFC00D87780 /* SceneDelegate.swift */; };
 		002BC0B0241DDAFC00D87780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC0AF241DDAFC00D87780 /* ViewController.swift */; };
 		002BC0B3241DDAFC00D87780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002BC0B1241DDAFC00D87780 /* Main.storyboard */; };
-		002BC0B5241DDAFF00D87780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002BC0B4241DDAFF00D87780 /* Assets.xcassets */; };
 		002BC0B8241DDAFF00D87780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002BC0B6241DDAFF00D87780 /* LaunchScreen.storyboard */; };
-		002BC0C0241DDB2500D87780 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002BC0BF241DDB2500D87780 /* TableCell.xib */; };
 		002BC0C2241DDB5B00D87780 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC0C1241DDB5B00D87780 /* TableCell.swift */; };
 		002BC0C4241EB42E00D87780 /* priceProductPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC0C3241EB42E00D87780 /* priceProductPic.swift */; };
+		003904A92426CAB20030F6F0 /* TableCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003904A82426CAB20030F6F0 /* TableCell2.xib */; };
+		005834B52442B94E00BCFC77 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005834B42442B94E00BCFC77 /* ItemViewController.swift */; };
+		005834B72443766600BCFC77 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005834B62443766600BCFC77 /* Media.xcassets */; };
+		00FAA536244CA3B4001EFEFB /* extendUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FAA535244CA3B4001EFEFB /* extendUIViewAnimation.swift */; };
+		00FAA53A244CD24A001EFEFB /* priceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FAA539244CD24A001EFEFB /* priceView.xib */; };
+		00FAA53C244CD3F7001EFEFB /* pricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FAA53B244CD3F7001EFEFB /* pricesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +28,16 @@
 		002BC0AD241DDAFC00D87780 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		002BC0AF241DDAFC00D87780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		002BC0B2241DDAFC00D87780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		002BC0B4241DDAFF00D87780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002BC0B7241DDAFF00D87780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		002BC0B9241DDAFF00D87780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		002BC0BF241DDB2500D87780 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		002BC0C1241DDB5B00D87780 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		002BC0C3241EB42E00D87780 /* priceProductPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceProductPic.swift; sourceTree = "<group>"; };
+		003904A82426CAB20030F6F0 /* TableCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell2.xib; sourceTree = "<group>"; };
+		005834B42442B94E00BCFC77 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		005834B62443766600BCFC77 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		00FAA535244CA3B4001EFEFB /* extendUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extendUIViewAnimation.swift; sourceTree = "<group>"; };
+		00FAA539244CD24A001EFEFB /* priceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = priceView.xib; sourceTree = "<group>"; };
+		00FAA53B244CD3F7001EFEFB /* pricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pricesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 		002BC09F241DDAFC00D87780 = {
 			isa = PBXGroup;
 			children = (
+				005834B62443766600BCFC77 /* Media.xcassets */,
 				002BC0AA241DDAFC00D87780 /* ProductFinder */,
 				002BC0A9241DDAFC00D87780 /* Products */,
 			);
@@ -65,13 +74,16 @@
 				002BC0AB241DDAFC00D87780 /* AppDelegate.swift */,
 				002BC0AD241DDAFC00D87780 /* SceneDelegate.swift */,
 				002BC0AF241DDAFC00D87780 /* ViewController.swift */,
+				005834B42442B94E00BCFC77 /* ItemViewController.swift */,
 				002BC0B1241DDAFC00D87780 /* Main.storyboard */,
-				002BC0B4241DDAFF00D87780 /* Assets.xcassets */,
 				002BC0B6241DDAFF00D87780 /* LaunchScreen.storyboard */,
 				002BC0B9241DDAFF00D87780 /* Info.plist */,
-				002BC0BF241DDB2500D87780 /* TableCell.xib */,
 				002BC0C1241DDB5B00D87780 /* TableCell.swift */,
 				002BC0C3241EB42E00D87780 /* priceProductPic.swift */,
+				003904A82426CAB20030F6F0 /* TableCell2.xib */,
+				00FAA539244CD24A001EFEFB /* priceView.xib */,
+				00FAA535244CA3B4001EFEFB /* extendUIViewAnimation.swift */,
+				00FAA53B244CD3F7001EFEFB /* pricesView.swift */,
 			);
 			path = ProductFinder;
 			sourceTree = "<group>";
@@ -135,8 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				002BC0B8241DDAFF00D87780 /* LaunchScreen.storyboard in Resources */,
-				002BC0B5241DDAFF00D87780 /* Assets.xcassets in Resources */,
-				002BC0C0241DDB2500D87780 /* TableCell.xib in Resources */,
+				003904A92426CAB20030F6F0 /* TableCell2.xib in Resources */,
+				00FAA53A244CD24A001EFEFB /* priceView.xib in Resources */,
+				005834B72443766600BCFC77 /* Media.xcassets in Resources */,
 				002BC0B3241DDAFC00D87780 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +165,10 @@
 				002BC0AC241DDAFC00D87780 /* AppDelegate.swift in Sources */,
 				002BC0C4241EB42E00D87780 /* priceProductPic.swift in Sources */,
 				002BC0C2241DDB5B00D87780 /* TableCell.swift in Sources */,
+				00FAA53C244CD3F7001EFEFB /* pricesView.swift in Sources */,
 				002BC0AE241DDAFC00D87780 /* SceneDelegate.swift in Sources */,
+				005834B52442B94E00BCFC77 /* ItemViewController.swift in Sources */,
+				00FAA536244CA3B4001EFEFB /* extendUIViewAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

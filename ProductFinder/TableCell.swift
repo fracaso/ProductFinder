@@ -39,7 +39,7 @@ class TableCell: UITableViewCell {
 
     }
  
-    var productPicture: UIImage? = UIImage(named: "corn")! {
+    var productPicture: UIImage? = UIImage(named: "question")! {
          didSet {
              if productPicture != oldValue  {
                 productImage.image = productPicture
@@ -60,6 +60,12 @@ class TableCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        if productItem  != "" {
+            print("Selected")
+        }
     }
+    
+    
+    
 
 }
