@@ -12,12 +12,14 @@ class PriceProductPic: Comparable{
     var productName: String
     var productPrice: Double
     var productPic: UIImage
+    var productPicBig: UIImage
     var productDescription: String
     
-    init(name: String, price: Double, pic: UIImage, desc: String ){
+    init(name: String, price: Double, pic: UIImage, bigPic: UIImage, desc: String ){
         self.productName = name
         self.productPrice = price
         self.productPic = pic
+        self.productPicBig = bigPic
         self.productDescription = desc
     }
     

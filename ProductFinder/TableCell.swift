@@ -1,22 +1,12 @@
-//
-//  TableCell.swift
-//  ProductFinder
-//
-//  Created by Aaron Kinney on 3/14/20.
-//  Copyright © 2020 HarvardInc. All rights reserved.
-//
-
 import UIKit
 
 class TableCell: UITableViewCell {
-
-
-    
     
     @IBOutlet weak var productLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var productImage: UIImageView!
  
+    // Set Product Item Name
      var productItem: String = "" {
          didSet {
              if (productItem != oldValue) {
@@ -27,7 +17,8 @@ class TableCell: UITableViewCell {
          }
 
      }
- 
+    
+    // Set
     var productPrice: Double = 0.0 {
         didSet {
             if (productPrice - oldValue > 0) {

@@ -14,6 +14,7 @@ class ItemViewController: UIViewController {
     var productName: String = ""
     var productQuantityType: String = ""
     var productDescription: String = ""
+    var pDesc: NSAttributedString = NSAttributedString()
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var labelProductDescription: UILabel!
@@ -45,23 +46,23 @@ class ItemViewController: UIViewController {
     @objc func labelTapped(_ sender: UITapGestureRecognizer) {
         
         // If the number of lines is 1, we know the label is in a truncated state
-        if labelProductDescription.numberOfLines == 1{
-           
-            // From Extension of View. This automates the change of number of lines
-           self.labelProductDescription.fadeTransition(0.4)
-           self.labelProductDescription.text = productDescription
-            
-           // Setting the lines to 0 causes the label to size itself appropriately based on
-           // whats there
-           self.labelProductDescription.numberOfLines = 0
-            
-        } else{
-            
-           // Back to truncated label
-           self.labelProductDescription.fadeTransition(0.4)
-           truncatedDescriptionLabelText()
-           self.labelProductDescription.numberOfLines = 1
-        }
+//        if labelProductDescription.numberOfLines == 1{
+//
+//            // From Extension of View. This automates the change of number of lines
+//           self.labelProductDescription.fadeTransition(0.4)
+//           self.labelProductDescription.text = productDescription
+//
+//           // Setting the lines to 0 causes the label to size itself appropriately based on
+//           // whats there
+//           self.labelProductDescription.numberOfLines = 0
+//
+//        } else{
+//
+//           // Back to truncated label
+//           self.labelProductDescription.fadeTransition(0.4)
+//           truncatedDescriptionLabelText()
+//           self.labelProductDescription.numberOfLines = 1
+//        }
     }
     
     // Adding Label Tap to make descriptions collapsable
@@ -79,13 +80,14 @@ class ItemViewController: UIViewController {
 
         let attrs2 = [NSAttributedString.Key.foregroundColor : UIColor.blue]
 
-        let attributedString1 = NSMutableAttributedString(string : String(productDescription.prefix(25)), attributes:attrs1)
+        let attributedString1 = NSMutableAttributedString(string : String(pDesc.string.prefix(25)), attributes:attrs1)
 
         let attributedString2 = NSMutableAttributedString(string:" ...", attributes:attrs2)
 
         attributedString1.append(attributedString2)
         self.labelProductDescription.fadeTransition(0.4)
-        self.labelProductDescription.attributedText = attributedString1
+        //self.labelProductDescription.attributedText = attributedString1
+        self.labelProductDescription.attributedText = pDesc
 
     }
     
