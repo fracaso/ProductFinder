@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "TableCell.setSelected(_:animated:):TableCell.swift">
+         contextName = "Products.getDictionaryByFirstLetter():Products.swift">
          <PersistentStrings>
             <PersistentString
-               value = "productItem">
+               value = "dict">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -18,6 +18,25 @@
             </PersistentString>
             <PersistentString
                value = "productImage.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableCell.setSelected(_:animated:):TableCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "productItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ItemViewController.truncatedDescriptionLabelText():ItemViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pDesc">
+            </PersistentString>
+            <PersistentString
+               value = "self.testView">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -48,6 +67,9 @@
          <PersistentStrings>
             <PersistentString
                value = "productMaster">
+            </PersistentString>
+            <PersistentString
+               value = "names">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

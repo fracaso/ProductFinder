@@ -17,13 +17,11 @@
 		005834B52442B94E00BCFC77 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005834B42442B94E00BCFC77 /* ItemViewController.swift */; };
 		005834B72443766600BCFC77 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005834B62443766600BCFC77 /* Media.xcassets */; };
 		00BA9124245FB912009D7A62 /* romaine.html in Resources */ = {isa = PBXBuildFile; fileRef = 00BA9121245FB911009D7A62 /* romaine.html */; };
-		00BA9125245FB912009D7A62 /* jalapeno.html in Resources */ = {isa = PBXBuildFile; fileRef = 00BA9122245FB911009D7A62 /* jalapeno.html */; };
 		00BA9126245FB912009D7A62 /* redbeets.html in Resources */ = {isa = PBXBuildFile; fileRef = 00BA9123245FB911009D7A62 /* redbeets.html */; };
 		00BA912A245FBA10009D7A62 /* candyonion.html in Resources */ = {isa = PBXBuildFile; fileRef = 00BA9129245FBA10009D7A62 /* candyonion.html */; };
 		00E03E3924568AA000435E13 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 00E03E3824568AA000435E13 /* product.json */; };
 		00E03E3B245690BB00435E13 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E03E3A245690BB00435E13 /* Products.swift */; };
 		00FAA536244CA3B4001EFEFB /* extendUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FAA535244CA3B4001EFEFB /* extendUIViewAnimation.swift */; };
-		00FAA53A244CD24A001EFEFB /* priceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FAA539244CD24A001EFEFB /* priceView.xib */; };
 		00FAA53C244CD3F7001EFEFB /* pricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FAA53B244CD3F7001EFEFB /* pricesView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,18 +37,13 @@
 		003904A82426CAB20030F6F0 /* TableCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell2.xib; sourceTree = "<group>"; };
 		005834B42442B94E00BCFC77 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		005834B62443766600BCFC77 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		005A78652471ED2B00353AFF /* jalapeno.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = jalapeno.html; sourceTree = "<group>"; };
 		00BA9121245FB911009D7A62 /* romaine.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = romaine.html; path = ../../../../../Downloads/_txtfiles/romaine.html; sourceTree = "<group>"; };
-		00BA9122245FB911009D7A62 /* jalapeno.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = jalapeno.html; path = ../../../../../Downloads/_txtfiles/jalapeno.html; sourceTree = "<group>"; };
 		00BA9123245FB911009D7A62 /* redbeets.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = redbeets.html; path = ../../../../../Downloads/_txtfiles/redbeets.html; sourceTree = "<group>"; };
 		00BA9129245FBA10009D7A62 /* candyonion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = candyonion.html; path = ../../../../../Downloads/candyonion.html; sourceTree = "<group>"; };
-		00BA912C245FBA1B009D7A62 /* romaine.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = romaine.html; sourceTree = "<group>"; };
-		00BA912D245FBA1B009D7A62 /* jalapeno.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = jalapeno.html; sourceTree = "<group>"; };
-		00BA912E245FBA1C009D7A62 /* candyonion.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = candyonion.html; sourceTree = "<group>"; };
-		00BA912F245FBA1C009D7A62 /* redbeets.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = redbeets.html; sourceTree = "<group>"; };
 		00E03E3824568AA000435E13 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = product.json; path = ../../../../../Downloads/product.json; sourceTree = "<group>"; };
 		00E03E3A245690BB00435E13 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		00FAA535244CA3B4001EFEFB /* extendUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extendUIViewAnimation.swift; sourceTree = "<group>"; };
-		00FAA539244CD24A001EFEFB /* priceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = priceView.xib; sourceTree = "<group>"; };
 		00FAA53B244CD3F7001EFEFB /* pricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pricesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,29 +87,16 @@
 				002BC0B9241DDAFF00D87780 /* Info.plist */,
 				00E03E3824568AA000435E13 /* product.json */,
 				002BC0C1241DDB5B00D87780 /* TableCell.swift */,
-				00BA912B245FBA1B009D7A62 /* Descriptions */,
-				00BA9122245FB911009D7A62 /* jalapeno.html */,
-				00BA9129245FBA10009D7A62 /* candyonion.html */,
-				00BA9123245FB911009D7A62 /* redbeets.html */,
-				00BA9121245FB911009D7A62 /* romaine.html */,
 				003904A82426CAB20030F6F0 /* TableCell2.xib */,
-				00FAA539244CD24A001EFEFB /* priceView.xib */,
 				00FAA535244CA3B4001EFEFB /* extendUIViewAnimation.swift */,
 				00FAA53B244CD3F7001EFEFB /* pricesView.swift */,
 				00E03E3A245690BB00435E13 /* Products.swift */,
+				005A78652471ED2B00353AFF /* jalapeno.html */,
+				00BA9129245FBA10009D7A62 /* candyonion.html */,
+				00BA9123245FB911009D7A62 /* redbeets.html */,
+				00BA9121245FB911009D7A62 /* romaine.html */,
 			);
 			path = ProductFinder;
-			sourceTree = "<group>";
-		};
-		00BA912B245FBA1B009D7A62 /* Descriptions */ = {
-			isa = PBXGroup;
-			children = (
-				00BA912D245FBA1B009D7A62 /* jalapeno.html */,
-				00BA912E245FBA1C009D7A62 /* candyonion.html */,
-				00BA912F245FBA1C009D7A62 /* redbeets.html */,
-				00BA912C245FBA1B009D7A62 /* romaine.html */,
-			);
-			path = Descriptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +159,8 @@
 			files = (
 				002BC0B8241DDAFF00D87780 /* LaunchScreen.storyboard in Resources */,
 				00BA9124245FB912009D7A62 /* romaine.html in Resources */,
-				00BA9125245FB912009D7A62 /* jalapeno.html in Resources */,
 				003904A92426CAB20030F6F0 /* TableCell2.xib in Resources */,
 				00BA912A245FBA10009D7A62 /* candyonion.html in Resources */,
-				00FAA53A244CD24A001EFEFB /* priceView.xib in Resources */,
 				005834B72443766600BCFC77 /* Media.xcassets in Resources */,
 				00BA9126245FB912009D7A62 /* redbeets.html in Resources */,
 				002BC0B3241DDAFC00D87780 /* Main.storyboard in Resources */,

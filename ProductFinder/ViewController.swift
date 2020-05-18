@@ -2,17 +2,21 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
      
-    
      // Cell Identifier
-     let cellTableIdentifier = "MonkeyBusiness"
-    
-    @IBOutlet weak var tableView: UITableView!
-   
+    let cellTableIdentifier = "MonkeyBusiness"
+
     // Product Master
     var productMaster: Products = Products()
     
+    // Keys and Names for the Build
+    var names: [String: [String]]!
+    var keys: [String]!
     
-    // Did Load Logic and registration of TableCell
+    @IBOutlet weak var tableView: UITableView!
+   
+//************************************************************************************************
+// VIEW DID LOAD
+//************************************************************************************************
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,21 +30,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.rowHeight = 66
         addNavBarImage()
         
+        // These are the Keys in the Section to the right on the Table View
+        keys = productMaster.getSectionHeaders()
+        names = productMaster.productDict
         
     }
 
- 
-    // MARK: Table View Data Source Methods
+//************************************************************************************************
+// MARK: Table View Data Source Methods
+//************************************************************************************************
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          
-        return productMaster.count
+        let key = keys[section]
+        let nameSection = names[key]!
+        
+        return nameSection.count
         
     }
     
+//************************************************************************************************
+// Set The Cell and Data
+//************************************************************************************************
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell( withIdentifier: cellTableIdentifier, for: indexPath) as! TableCell
-        let rowData = productMaster.getProduct(index: indexPath.row)
+        
+        let name = String(names[keys[indexPath[0]]]![indexPath[1]])
+        
+        let rowData = productMaster.getProductByName(name: name)
+        
+        print(names[keys[indexPath[0]]]![indexPath[1]])
         
         cell.productItem = rowData.name
         cell.productPrice = 0.00
@@ -50,14 +69,55 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+//************************************************************************************************
+// Move On Segue
+//************************************************************************************************
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         self.performSegue(withIdentifier: "detail", sender: nil)
+        
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
     
+//************************************************************************************************
+// Chooses which Index Value to set closest to the top
+//************************************************************************************************
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        
+        return index
     
-    // MARK: - Navigation override
+    }
+
+//************************************************************************************************
+// Return the Groups Key
+//************************************************************************************************
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return keys[section]
+    
+    }
+    
+//************************************************************************************************
+// Get Count of Sections
+//************************************************************************************************
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return keys.count
+        
+    }
+
+//************************************************************************************************
+// Get the Section Indexes
+//************************************************************************************************
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+            
+            return keys
+    }
+        
+//************************************************************************************************
+// MARK: - Navigation override
+//************************************************************************************************
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        // Get the new view controller using [segue destinationViewController].
        // Pass the selected object to the new view controller.
@@ -65,11 +125,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let detailVC = segue.destination as! ItemViewController
             let row = tableView.indexPathForSelectedRow!.row
             
-            detailVC.productName = productMaster.getProduct(index: row).name
-            detailVC.productimage = UIImage(named: "\(productMaster.getProduct(index: row).largePictureName).png") ?? UIImage(named: "question.png")!
+            detailVC.productName = productMaster.getProductByIndex(index: row).name
+            detailVC.productimage = UIImage(named: "\(productMaster.getProductByIndex(index: row).largePictureName).png") ?? UIImage(named: "question.png")!
             
             // Get URL
-            guard let url = Bundle.main.url(forResource: productMaster.getProduct(index: row).descriptionFileName, withExtension: "html") else{
+            guard let url = Bundle.main.url(forResource: productMaster.getProductByIndex(index: row).descriptionFileName, withExtension: "html") else{
                 return
             }
             
@@ -80,30 +140,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             // Convert Data into String for passing
-            //let str = String(decoding: data, as: UTF8.self)
             if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
                 detailVC.pDesc = attributedString
             }
-            //detailVC.productDescription = str
-    
             
         }
     }
-
-    
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        var arrayTitles:[String] = []
-        for item in productMaster.productList{
-            let firstLetter = String(item.name.prefix(1))
-            
-            if !arrayTitles.contains(firstLetter){
-                arrayTitles.append(firstLetter)
-            }
-        }
-        
-        return arrayTitles.sorted()
-    }
- 
+     
+//************************************************************************************************
+// Add the Navigation Bar with Png and Cart
+//************************************************************************************************
     func addNavBarImage() {
 
         let navController = navigationController!

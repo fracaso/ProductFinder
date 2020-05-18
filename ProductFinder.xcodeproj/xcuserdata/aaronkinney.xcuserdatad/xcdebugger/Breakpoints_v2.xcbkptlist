@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5E6A3572-607E-4DF8-9ED8-6F1345A3F2FD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProductFinder/ItemViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A1F1CCA8-DDDE-4728-8306-2C02E61EC055"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -39,32 +23,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "81E37BAD-956E-4954-8053-6C0561E8C33C"
+            uuid = "EE210213-04F4-4F5C-8FA5-960CFFF7E47C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProductFinder/ItemViewController.swift"
+            filePath = "ProductFinder/Products.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "truncatedDescriptionLabelText()"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "getDictionaryByFirstLetter()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "45E0F4A1-DC20-4077-B6A0-1D7DD362D258"
+            uuid = "6433F659-A6C5-41CE-A26E-1FDCED06158D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProductFinder/ItemViewController.swift"
+            filePath = "ProductFinder/Products.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "labelTapped(_:)"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getDictionaryByFirstLetter()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FDAC7C5-8CE6-45DC-95BD-57CE79B24895"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProductFinder/Products.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init(fileName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
